@@ -1,9 +1,41 @@
-cookiecutter
+Directory structure of data science project
 ==============================
+# Contents
+Data scienceプロジェクトのディレクトリ構成テンプレートである。
+具体例としてKaggleのTitanicコンペを題材にしている。
 
-tm
+# Commands
+poetryでパッケージ管理する。
+`poetry run`の後に実行コマンドを記載する。以下のコマンドでは先頭の`poetry run`を省略する。
 
-Project Organization
+## Change data to feather format
+
+```
+python scripts/convert_to_feather.py
+```
+
+## Create features
+
+```
+python features/create.py
+```
+
+## Run LightGBM
+
+```
+python run.py
+```
+
+## flake8
+
+```
+flake8 .
+```
+
+# Project Organization  
+[Cookiecutter](https://github.com/drivendata/cookiecutter-data-science)と
+[u++](https://github.com/upura/ml-competition-template-titanic)のリポジトリを参考にする。
+
 ------------
 
     ├── LICENSE
