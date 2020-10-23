@@ -11,7 +11,7 @@ poetryでパッケージ管理する。
 ## Change data to feather format
 
 ```
-python src/scripts/convert_to_feather.py
+python src/utils/convert_to_feather.py
 ```
 
 ## Create features
@@ -50,6 +50,8 @@ flake8 .
     │
     ├── features             <- serialized features
     │
+    ├── logs             <- log
+    │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks for EDA. Naming convention is a number (for ordering),
@@ -61,15 +63,12 @@ flake8 .
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
+    ├── configs         <- config file
     │
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── config    <- config
-    │   │
-    │   ├── scripts    <- convert csv to feather
-    │   │
-    │   ├── utils    <- 
+    │   ├── utils    <- convert csv to feather
     │   │
     │   ├── logs    <- set logger
     │   │

@@ -12,7 +12,7 @@ from models.lgbm import train_and_predict
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--config', default='./src/configs/default.json')
+parser.add_argument('--config', default='./configs/default.json')
 options = parser.parse_args()
 config = json.load(open(options.config))
 
