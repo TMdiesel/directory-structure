@@ -11,19 +11,19 @@ poetryでパッケージ管理する。
 ## Change data to feather format
 
 ```
-python scripts/convert_to_feather.py
+python src/scripts/convert_to_feather.py
 ```
 
 ## Create features
 
 ```
-python features/create.py
+python src/features/create.py
 ```
 
 ## Run LightGBM
 
 ```
-python run.py
+python src/run.py
 ```
 
 ## flake8
@@ -47,6 +47,8 @@ flake8 .
     ├── diary               <- diary
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── features             <- serialized features
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
